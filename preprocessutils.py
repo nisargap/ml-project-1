@@ -14,7 +14,7 @@ def processfile(rawfilename, processedfilename, processfunc):
             data_to_write.append(str(new_arr)[1:-1].replace(" ", "")+"\n")
     with open(processedfilename, "a+") as w:
         # randomize the order of items to write to the file
-        # random.shuffle(data_to_write)
+        random.shuffle(data_to_write)
         for line in data_to_write:
             w.write(line)
 

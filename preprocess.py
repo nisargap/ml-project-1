@@ -7,6 +7,7 @@ from preprocessutils import processfile
 from preprocess_breastcancer import preprocess_breast_cancer
 from preprocess_glass import preprocess_glass
 from preprocess_iris import preprocess_iris
+from preprocess_votes import preprocess_votes
 
 def process():
     filemap = {
@@ -21,6 +22,10 @@ def process():
         "raw/iris-unprocessed.data": {
             "filename": "processed/iris-processed.data",
             "processor": preprocess_iris
+        },
+        "raw/house-votes-84-unprocessed.data": {
+            "filename": "processed/house-votes-84-processed.data",
+            "processor": preprocess_votes
         }
     }
     for raw_file in filemap:

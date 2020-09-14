@@ -113,5 +113,5 @@ def preprocess_glass(line):
             inx = abs(round(diff_from_min)) % 50
             bucket = get_bucket_for_value(inx, 50)
             vals += bucket
-    vals.append(int(classification))
+    vals.append(int(classification) - 1)
     return vals

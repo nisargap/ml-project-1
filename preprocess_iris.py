@@ -33,9 +33,9 @@ MIN_PETAL_LEN = 1.0
 MIN_PETAL_WIDTH =  0.1
 
 POSSIBLE_CLASSES = {
-    "Iris-setosa": 1,
-    "Iris-versicolor": 2,
-    "Iris-virginica": 3
+    "Iris-setosa": 0,
+    "Iris-versicolor": 1,
+    "Iris-virginica": 2
 }
 
 def preprocess_iris(line):
